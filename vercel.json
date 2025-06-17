@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "cap.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/solve-truecaptcha",
+      "methods": ["POST"],
+      "dest": "cap.py"
+    }
+  ]
+}
